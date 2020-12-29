@@ -18,12 +18,13 @@ Builds the app for production to the `public` folder.
 
 ### `npm run deploy`
 
-Builds the app and deploys to gh-pages branch.
+Builds the app and deploys to master branch.
 
 **Before deployment, do the following**
 
 1. Update siteUrl in gatsby-config.js. This is the cname.
 2. Update og:url and og:image in pages/index.tsx to match the cname.
+3. Go to GitHub Pages in repository settings. Make sure source branch is set to master branch. Update custom domain to match cname. 
 
 ## Folder Structure
 
