@@ -31,7 +31,7 @@
   "scripts": {
     "start": "gatsby develop -p 7001 -o",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && master -d public"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "eslintConfig": {
     "extends": [
