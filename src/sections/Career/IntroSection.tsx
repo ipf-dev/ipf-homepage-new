@@ -30,12 +30,13 @@ const commonStyle = css`
 
   @media ${responsive.conditionForTablet} {
     width: 22.6rem;
-    height: 28rem;
+    height: 17rem;
     margin: 0 1.6rem 0 0;
   }
 
   @media ${responsive.conditionForDesktop} {
     width: 33.6rem;
+    height: 28rem;
   }
 `;
 

@@ -7,7 +7,7 @@ const NewsItemPublisher = styled.p`
   ${Typography("caption", 1.2, 700)};
   color: ${colors.primary};
   text-align: left;
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
   word-break: keep-all;
 `;
 

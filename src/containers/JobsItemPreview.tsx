@@ -44,7 +44,7 @@ export default function JobsItemPreview() {
 
   return (
     <div
-      style={{ marginTop: "64px", width: "100%" }}
+      style={{ marginTop: "6.4rem", width: "100%" }}
       data-sal="slide-up"
       data-sal-duration="1000"
       data-sal-easing="ease"

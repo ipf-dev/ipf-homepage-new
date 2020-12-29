@@ -35,19 +35,11 @@ const DescriptionStyled = styled(Description)`
   }
 `;
 
-const Logo = styled.span`
+const Logo = styled.img`
   margin-bottom: 2.4rem;
 
   width: 24rem;
   height: 6rem;
-
-  background-image: url(${img_spindlebooks_logo});
-  @media ${high_resolution} {
-    background-image: url(${img_spindlebooks_logo_2x});
-  }
-
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const Viewers = styled.span`
@@ -63,9 +55,16 @@ const Viewers = styled.span`
   background-repeat: no-repeat;
   background-size: contain;
 
+  @media ${responsive.conditionForTablet} {
+    margin-top: 8rem;
+    height: 29.4rem;
+    background-size: cover;
+  }
+
   @media ${responsive.conditionForDesktop} {
     margin-top: 8rem;
     height: 43.5rem;
+    background-size: contain;
   }
 `;
 
@@ -100,7 +99,7 @@ export default function SpindleBooksSection() {
       data-sal-easing="ease"
     >
       <ColumnStyled>
-        <Logo />
+        <Logo src={img_spindlebooks_logo} srcSet={img_spindlebooks_logo_2x} />
         <DescriptionStyled>{t("HPG-30")}</DescriptionStyled>
       </ColumnStyled>
       <ProductImgStyled />

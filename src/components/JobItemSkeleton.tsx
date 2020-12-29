@@ -18,7 +18,7 @@ const DescriptionContainerSkeleton = styled(DescriptionContainer)`
 `;
 
 const TypeOfJobSkeleton = styled(TypeOfJob)`
-  width: 100px;
+  width: 10rem;
 `;
 
 const LabelSkeleton = styled(LabelStyled)`

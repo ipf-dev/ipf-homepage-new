@@ -147,7 +147,7 @@ button {
 }
 
 html {
-  font-size: 10px;
+  font-size: 1rem;
   width: 100%;
   min-height: 100%;
   -webkit-tap-highlight-color: transparent;

@@ -42,19 +42,11 @@ const DescriptionStyled = styled(Description)`
   }
 `;
 
-const Logo = styled.span`
+const Logo = styled.img`
   margin-bottom: 2.4rem;
 
   width: 30rem;
   height: 3.6rem;
-
-  background-image: url(${img_logo_brc});
-  @media ${high_resolution} {
-    background-image: url(${img_logo_brc_2x});
-  }
-
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const ProductImgStyled = styled(ProductImg)`
@@ -89,7 +81,7 @@ export default function BRCSection() {
     >
       <ProductImgStyled />
       <ColumnStyled>
-        <Logo />
+        <Logo src={img_logo_brc} srcSet={img_logo_brc_2x} />
         <DescriptionStyled>{t("HPG-34")}</DescriptionStyled>
         <Services />
       </ColumnStyled>

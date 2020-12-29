@@ -71,7 +71,7 @@ const SwitchLanguageButtonWrapper = styled.div`
 
   @media ${responsive.conditionForTablet} {
     justify-content: flex-end;
-    margin-top: 79px;
+    margin-top: 7.9rem;
   }
 `;
 
@@ -80,11 +80,11 @@ type ButtonProps = {
 };
 
 const ToKOButton = styled.button`
-  padding: 8px 16px;
-  width: 52px;
-  height: 37px;
+  padding: 0.8rem 1.6rem;
+  width: 5.2rem;
+  height: 3.7rem;
   background-color: ${colors.gray5};
-  border-radius: 8px;
+  border-radius: 0.8rem;
   border: none;
   outline: 0;
   cursor: pointer;

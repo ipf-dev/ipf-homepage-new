@@ -7,7 +7,7 @@ const NewsItemDate = styled.p`
   ${Typography("caption", 1.2, 400)};
   color: ${colors.gray4};
   text-align: left;
-  margin-top: 8px;
+  margin-top: 0.8rem;
 `;
 
 export default NewsItemDate;

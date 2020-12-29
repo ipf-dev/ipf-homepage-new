@@ -25,10 +25,10 @@ const ImageList = styled.div`
   }
 `;
 
-const commonGrowthImageStyle = css`
+const GrowthImage = styled.img`
   width: 100%;
   height: 26.7rem;
-  border-radius: 16px;
+  border-radius: 1.6rem;
   margin: 0 0 1.6rem 0;
 
   background-repeat: no-repeat;
@@ -36,38 +36,13 @@ const commonGrowthImageStyle = css`
 
   @media ${responsive.conditionForTablet} {
     width: 22.6rem;
-    height: 28rem;
+    height: 17rem;
     margin: 0 1.6rem 0 0;
   }
 
   @media ${responsive.conditionForDesktop} {
     width: 33.6rem;
-  }
-`;
-
-const GrowthImage1 = styled.span`
-  ${commonGrowthImageStyle};
-
-  background-image: url(${img_growing_together_1});
-  @media ${high_resolution} {
-    background-image: url(${img_growing_together_1_2x});
-  }
-`;
-
-const GrowthImage2 = styled.span`
-  ${commonGrowthImageStyle};
-
-  background-image: url(${img_growing_together_2});
-  @media ${high_resolution} {
-    background-image: url(${img_growing_together_2_2x});
-  }
-`;
-
-const GrowthImage3 = styled.span`
-  ${commonGrowthImageStyle};
-  background-image: url(${img_growing_together_3});
-  @media ${high_resolution} {
-    background-image: url(${img_growing_together_3_2x});
+    height: 28rem;
   }
 `;
 
@@ -87,9 +62,18 @@ export default function GrowthSection() {
       <SubTitle>{t("HPG-53")}</SubTitle>
       <Description>{t("HPG-54")}</Description>
       <ImageList>
-        <GrowthImage1 />
-        <GrowthImage2 />
-        <GrowthImage3 />
+        <GrowthImage
+          src={img_growing_together_1}
+          srcSet={img_growing_together_1_2x}
+        />
+        <GrowthImage
+          src={img_growing_together_2}
+          srcSet={img_growing_together_2_2x}
+        />
+        <GrowthImage
+          src={img_growing_together_3}
+          srcSet={img_growing_together_3_2x}
+        />
       </ImageList>
     </ContainerStyled>
   );

@@ -23,14 +23,14 @@ const ColumnStyled = styled.div`
 
 const SubTitleEngStyled = styled(SubTitleEng)`
   @media ${responsive.conditionForDesktop} {
-    width: 445px;
+    width: 44.5rem;
   }
 `;
 
 const DescriptionStyled = styled(Description)`
   margin-bottom: 0;
   @media ${responsive.conditionForDesktop} {
-    width: 480px;
+    width: 48rem;
   }
 `;
 

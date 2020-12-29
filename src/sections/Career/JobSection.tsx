@@ -14,7 +14,7 @@ const ContainerStyled = styled(Container)`
   background-color: ${colors.gray1};
 
   ${Typography("heading1")};
-  line-height: 49px;
+  line-height: 4.9rem;
   color: ${colors.black};
 `;
 

@@ -4,7 +4,7 @@ import Typography from "../../layouts/Typography";
 
 const NewsItemHeader = styled.p`
   ${Typography("body", 1.6, 700)};
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
   word-break: keep-all;
 `;
 

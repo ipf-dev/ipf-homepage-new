@@ -34,19 +34,11 @@ const ColumnStyled = styled(Column)`
   }
 `;
 
-const Logo = styled.span`
+const Logo = styled.img`
   margin-bottom: 2.4rem;
 
   width: 19.1rem;
   height: 5.3rem;
-
-  background-image: url(${img_logo_popreader});
-  @media ${high_resolution} {
-    background-image: url(${img_logo_popreader_2x});
-  }
-
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const ProductImgStyled = styled(ProductImg)`
@@ -80,7 +72,7 @@ export default function PopReaderSection() {
       data-sal-easing="ease"
     >
       <ColumnStyled>
-        <Logo />
+        <Logo src={img_logo_popreader} srcSet={img_logo_popreader_2x} />
         <DescriptionStyled>{t("HPG-35")}</DescriptionStyled>
         <Services />
       </ColumnStyled>

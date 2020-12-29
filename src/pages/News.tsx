@@ -30,7 +30,7 @@ const NewsItemContainer = styled.a`
   transition: all 0.1s linear;
 
   :hover {
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.12);
     transition: box-shadow 0.3s ease-in-out;
   }
 `;
@@ -68,7 +68,7 @@ function displayNewsItemSkeleton() {
     skeletonNewsItems.push(
       <NewsItemContainerSkeleton key={i}>
         <NewsItemPublisher style={{ height: "0.8rem", width: "100%" }}>
-          <Skeleton height={8} style={{ height: "0.8rem", width: "64px" }} />
+          <Skeleton height={8} style={{ height: "0.8rem", width: "6.4rem" }} />
         </NewsItemPublisher>
         <NewsItemTitle style={{ height: "0.8rem", width: "100%" }}>
           <Skeleton height={8} />

@@ -16,7 +16,7 @@ import img_contact_company from "../assets/images/Contact/img_contact_company.pn
 import img_contact_company_2x from "../assets/images/Contact/img_contact_company@2x.png";
 
 const SubTitleStyled = styled(SubTitle)`
-  @media only screen and (max-width: 1040px) {
+  @media only screen and (max-width: 104rem) {
     width: 100%;
     font-size: 3.2rem;
   }
@@ -39,19 +39,13 @@ const Description = styled.dt`
   }
 `;
 
-const ContactCompanyImage = styled.span`
+const ContactCompanyImage = styled.img`
   width: 100%;
   height: 9.846rem;
-  padding: 0px calc((100% - 32rem) / 2);
+  padding: 0 calc((100% - 32rem) / 2);
   border-radius: 1.6rem;
   margin-bottom: 1.654rem;
   margin-top: 6.4rem;
-
-  background-size: cover;
-  background-image: url(${img_contact_company});
-  @media ${high_resolution} {
-    background-image: url(${img_contact_company_2x});
-  }
 
   @media ${responsive.conditionForTablet} {
     margin: 6.4rem 0 1.6rem 0;
@@ -114,7 +108,10 @@ export default function Contact() {
         data-sal-easing="ease"
       >
         <SubTitleStyled>{t("HPG-80")}</SubTitleStyled>
-        <ContactCompanyImage />
+        <ContactCompanyImage
+          src={img_contact_company}
+          srcSet={img_contact_company_2x}
+        />
         <ContactInfo>
           <AddressBook>
             <Title>{t("HPG-81")}</Title>
@@ -122,7 +119,9 @@ export default function Contact() {
             <Title>{t("HPG-83")}</Title>
             <Description>{t("HPG-84")}</Description>
             <Title>{t("HPG-85")}</Title>
-            <Description style={{ width: "222px" }}>{t("HPG-86")}</Description>
+            <Description style={{ width: "22.2rem" }}>
+              {t("HPG-86")}
+            </Description>
             <Title>{t("HPG-87")}</Title>
             <Description>{t("HPG-122")}</Description>
           </AddressBook>

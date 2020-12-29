@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-import { responsive, high_resolution } from "../../layouts/responsive";
+import { responsive } from "../../layouts/responsive";
 
 import colors from "../../layouts/colors";
 
@@ -38,25 +38,15 @@ const DescriptionStyled = styled(Description)`
   }
 `;
 
-const CoreValuesImg = styled.span`
+const CoreValuesImg = styled.img`
   width: 100%;
   height: 30rem;
   margin-top: 6.4rem;
-
-  background-image: url(${img_diagram});
-  @media ${high_resolution} {
-    background-image: url(${img_diagram_2x});
-  }
-
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @media ${responsive.conditionForTablet} {
     width: 40.8rem;
     height: 41rem;
     margin-top: 0;
-    background-size: contain;
-    background-position: center;
   }
 
   @media ${responsive.conditionForDesktop} {
@@ -85,6 +75,8 @@ export default function CoreValuesSection() {
         <DescriptionStyled>{t("HPG-7")}</DescriptionStyled>
       </ColumnStyled>
       <CoreValuesImg
+        src={img_diagram}
+        srcSet={img_diagram_2x}
         data-sal="slide-up"
         data-sal-duration="1000"
         data-sal-easing="ease"

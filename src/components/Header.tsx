@@ -13,7 +13,7 @@ type Props = {
 
 const HeaderContainer = styled.header`
   width: 100%;
-  height: 235px;
+  height: 23.5rem;
 
   color: white;
   background-color: ${colors.black};
@@ -25,7 +25,7 @@ const HeaderContainer = styled.header`
 
 const Title = styled.h1`
   position: relative;
-  top: calc(100% - 80px);
+  top: calc(100% - 8rem);
   color: white;
   padding-left: calc((100% - 32rem) / 2);
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { navigate } from "gatsby";
 
-import { responsive, high_resolution } from "../../layouts/responsive";
+import { responsive } from "../../layouts/responsive";
 import colors from "../../layouts/colors";
 
 import Container from "../../components/Container";
@@ -20,25 +20,15 @@ const ProductContainer = styled(Container)`
   background-color: ${colors.gray1};
 `;
 
-const HomeProductImg = styled.span`
+const HomeProductImg = styled.img`
   width: 100%;
   height: 27.5rem;
   margin-top: 6.4rem;
-
-  background-image: url(${img_home_product_image});
-  @media ${high_resolution} {
-    background-image: url(${img_home_product_image_2x});
-  }
-
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @media ${responsive.conditionForTablet} {
     width: 40.6rem;
     height: 51.2rem;
     margin-top: 0;
-    background-size: contain;
-    background-position: center;
   }
 
   @media ${responsive.conditionForDesktop} {
@@ -71,6 +61,8 @@ export default function ProductSection() {
         <Button onClick={() => navigate("/product")}>{t("HPG-4")}</Button>
       </ColumnStyled>
       <HomeProductImg
+        src={img_home_product_image}
+        srcSet={img_home_product_image_2x}
         data-sal="slide-up"
         data-sal-duration="1000"
         data-sal-easing="ease"

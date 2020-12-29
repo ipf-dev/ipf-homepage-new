@@ -40,19 +40,11 @@ const DescriptionStyled = styled(Description)`
   }
 `;
 
-const Logo = styled.span`
+const Logo = styled.img`
   margin-bottom: 2.4rem;
 
   width: 30rem;
   height: 3.3rem;
-
-  background-image: url(${img_logo_orc});
-  @media ${high_resolution} {
-    background-image: url(${img_logo_orc_2x});
-  }
-
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const ProductImgStyled = styled(ProductImg)`
@@ -86,7 +78,7 @@ export default function ORCSection() {
       data-sal-easing="ease"
     >
       <ColumnStyled>
-        <Logo />
+        <Logo src={img_logo_orc} srcSet={img_logo_orc_2x} />
         <DescriptionStyled>{t("HPG-33")}</DescriptionStyled>
         <Services />
       </ColumnStyled>

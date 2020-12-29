@@ -119,7 +119,7 @@ const OuterModal = styled.div`
   height: 100%;
   border-radius: 1.6rem;
   background-color: white;
-  box-shadow: 0px 32px 48px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3.2rem 4.8rem rgba(0, 0, 0, 0.16);
 
   padding: 5.6rem 2.4rem 0 2.4rem;
   margin: 0 auto;

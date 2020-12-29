@@ -78,7 +78,7 @@ const RedBubble = styled.div`
 
 const List = styled.div`
   margin-left: 2rem;
-  line-height: 1px;
+  line-height: 0.1rem;
   width: 28.6rem;
 `;
 

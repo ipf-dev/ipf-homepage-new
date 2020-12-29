@@ -26,17 +26,17 @@ const ButtonWrapper = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   width: fit-content;
-  height: 53px;
+  height: 5.3rem;
 
   white-space: nowrap;
 
   &:hover a {
     background-color: #f16a4f;
-    padding-right: 96px;
+    padding-right: 9.6rem;
     transition: all 0.1s ease-in-out;
 
     :after {
-      left: 56px;
+      left: 5.6rem;
       transition: left 0.1s ease-in-out;
     }
   }
@@ -48,13 +48,13 @@ const ButtonWrapper = styled.div`
 
 const ButtonComponent = styled.a`
   background-color: ${colors.primary};
-  padding: 16px 80px 16px 24px;
+  padding: 1.6rem 8rem 1.6rem 2.4rem;
   width: 100%;
   height: 100%;
 
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 
   text-align: left;
   cursor: pointer;
@@ -68,10 +68,10 @@ type IconProps = {
 
 const Icon = styled.span`
   position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 17px;
-  right: 26px;
+  width: 1.6rem;
+  height: 1.6rem;
+  top: 1.7rem;
+  right: 2.6rem;
 
   cursor: pointer;
 

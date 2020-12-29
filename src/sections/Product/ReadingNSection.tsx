@@ -42,19 +42,11 @@ const DescriptionStyled = styled(Description)`
   }
 `;
 
-const Logo = styled.span`
+const Logo = styled.img`
   margin-bottom: 2.4rem;
 
   width: 24.2rem;
   height: 4rem;
-
-  background-image: url(${img_logo_readingn});
-  @media ${high_resolution} {
-    background-image: url(${img_logo_readingn_2x});
-  }
-
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const ProductImgStyled = styled(ProductImg)`
@@ -89,7 +81,7 @@ export default function ReadingNSection() {
     >
       <ProductImgStyled />
       <ColumnStyled>
-        <Logo />
+        <Logo src={img_logo_readingn} srcSet={img_logo_readingn_2x} />
         <DescriptionStyled>{t("HPG-32")}</DescriptionStyled>
         <Services all />
       </ColumnStyled>

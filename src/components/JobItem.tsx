@@ -26,9 +26,9 @@ export const Item = styled(Link)`
   display: flex;
   flex-direction: column;
   min-width: 100%;
-  padding: 24px;
+  padding: 2.4rem;
   border: none;
-  border-radius: 16px;
+  border-radius: 1.6rem;
   margin-bottom: 0.8rem;
 
   white-space: nowrap;
@@ -38,7 +38,7 @@ export const Item = styled(Link)`
   transition: all 0.1s linear;
 
   :hover {
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.12);
   }
 
   :focus {

@@ -39,19 +39,11 @@ const DescriptionStyled = styled(Description)`
   }
 `;
 
-const Logo = styled.span`
+const Logo = styled.img`
   margin-bottom: 2.4rem;
 
   width: 22.1rem;
   height: 4.5rem;
-
-  background-image: url(${img_logo_olb});
-  @media ${high_resolution} {
-    background-image: url(${img_logo_olb_2x});
-  }
-
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const Title = styled(SubTitleEng)`
@@ -99,7 +91,7 @@ export default function OLBSection() {
         data-sal-easing="ease"
       >
         <ColumnStyled>
-          <Logo />
+          <Logo src={img_logo_olb} srcSet={img_logo_olb_2x} />
           <DescriptionStyled>{t("HPG-31")}</DescriptionStyled>
           <Services />
         </ColumnStyled>
