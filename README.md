@@ -4,7 +4,7 @@
 
 ## Branches
 
-development - Contains the source code.
+development - Contains the source code.\
 master - Contains the static files after gatsby build. Used to make it into github page. 
 
 ## Scripts
