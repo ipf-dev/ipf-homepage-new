@@ -30,7 +30,6 @@ Builds the app and deploys to gh-pages branch.
 ```
 src
 └── api                   # api calls to get news and jobs data from culture.iportfolio.co.kr
-    └
     assets
     └──files              # files to download onClick
     └──images             # images organized based on pages
@@ -38,9 +37,7 @@ src
         └──Career
         ...
     components            # all presentational components
-    └
     containers            # container components that handles React states
-    └
     layouts
     └──Typography            # function that returns css based on typography type
     └──colors                # stores colors
