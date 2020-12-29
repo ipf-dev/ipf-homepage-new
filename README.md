@@ -14,11 +14,11 @@ You will also see any lint errors in the console.
 
 ### `npm run build`
 
-Builds the app for production to the `public` folder.\
+Builds the app for production to the `public` folder.
 
 ### `npm run deploy`
 
-Builds the app and deploys to gh-pages branch.\
+Builds the app and deploys to gh-pages branch.
 
 **Before deployment, do the following**
 
