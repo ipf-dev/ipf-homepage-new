@@ -2,6 +2,11 @@
 
 회사 홈페이지 소스 코드 저장소입니다.
 
+## Branches
+
+development - Contains the source code.\
+master - Contains the static files after gatsby build. Used to make it into github page. 
+
 ## Scripts
 
 ### `npm start`
