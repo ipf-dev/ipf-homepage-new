@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Skeleton from "react-loading-skeleton";
 
-import Typography from "../../assets/Typography";
+import Typography from "../../layouts/Typography";
 import colors from "../../layouts/colors";
 
 import { getJobDetail } from "../../api/getJobsData";

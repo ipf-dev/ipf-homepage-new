@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { responsive } from "../layouts/responsive";
-import colors from "../layouts/colors";
+import { responsive } from "../../layouts/responsive";
+import colors from "../../layouts/colors";
 
 const NewsItemContainer = styled.a`
   display: flex;

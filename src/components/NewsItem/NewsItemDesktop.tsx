@@ -3,11 +3,11 @@ import React from "react";
 import {
   NewsDataType,
   NewsItemDescriptionStyled,
-} from "../containers/NewsItemPreview";
-import NewsItemContainer from "../components/NewsItemContainer";
-import NewsItemPublisher from "../components/NewsItemPublisher";
-import NewsItemTitle from "../components/NewsItemTitle";
-import NewsItemDate from "../components/NewsItemDate";
+} from "../../containers/NewsItemPreview";
+import NewsItemContainer from "./NewsItemContainer";
+import NewsItemPublisher from "./NewsItemPublisher";
+import NewsItemTitle from "./NewsItemTitle";
+import NewsItemDate from "./NewsItemDate";
 
 type NewsItemDesktopProps = {
   newsItem: NewsDataType;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import Typography from "../assets/Typography";
-import colors from "../layouts/colors";
+import Typography from "../../layouts/Typography";
+import colors from "../../layouts/colors";
 
 const NewsItemPublisher = styled.p`
   ${Typography("caption", 1.2, 700)};

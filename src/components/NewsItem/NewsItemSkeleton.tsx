@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Skeleton from "react-loading-skeleton";
 
-import NewsItemContainer from "../components/NewsItemContainer";
-import NewsItemPublisher from "../components/NewsItemPublisher";
-import NewsItemTitle from "../components/NewsItemTitle";
-import NewsItemDescription from "../components/NewsItemDescription";
-import NewsItemDate from "../components/NewsItemDate";
+import NewsItemContainer from "./NewsItemContainer";
+import NewsItemPublisher from "./NewsItemPublisher";
+import NewsItemTitle from "./NewsItemTitle";
+import NewsItemDescription from "./NewsItemDescription";
+import NewsItemDate from "./NewsItemDate";
 
 export const NewsItemContainerSkeleton = styled(NewsItemContainer)`
   :hover {

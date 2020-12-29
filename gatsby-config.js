@@ -11,6 +11,9 @@ module.exports = {
     siteUrl: `https://company.iportfolio.co.kr`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-cname`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -20,9 +23,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-react-helmet-async`,
-    },
-    {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         path: `${__dirname}/src/locales`,
@@ -30,9 +30,6 @@ module.exports = {
         defaultLanguage: `ko`,
         debug: true,
       },
-    },
-    {
-      resolve: `gatsby-plugin-styled-components`,
     },
     {
       resolve: `gatsby-plugin-scroll-reveal`,
@@ -47,9 +44,6 @@ module.exports = {
       options: {
         queries: myCustomQueries,
       },
-    },
-    {
-      resolve: `gatsby-plugin-cname`,
     },
     {
       resolve: `gatsby-plugin-google-analytics`,

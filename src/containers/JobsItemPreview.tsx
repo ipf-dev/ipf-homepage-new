@@ -28,7 +28,11 @@ export default function JobsItemPreview() {
 
     getAllJobs(signal)
       .then((resultData: JobItemDataType[]) => {
-        setJobsData(resultData);
+        if (resultData) {
+          setJobsData(resultData);
+        } else {
+          setJobsData([emptyJobsData]);
+        }
       })
       .catch(() => setJobsData([emptyJobsData]));
 

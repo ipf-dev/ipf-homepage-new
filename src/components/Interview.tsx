@@ -13,7 +13,7 @@ import { Translation } from "gatsby-plugin-react-i18next";
 import { responsive, high_resolution } from "../layouts/responsive";
 
 import colors from "../layouts/colors";
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 
 import img_arrow_left from "../assets/images/Career/img_arrow_left.png";
 import img_arrow_left_2x from "../assets/images/Career/img_arrow_left@2x.png";

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 import colors from "../layouts/colors";
 
 const Description = styled.p`

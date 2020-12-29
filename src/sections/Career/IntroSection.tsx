@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-import Typography from "../../assets/Typography";
+import Typography from "../../layouts/Typography";
 
 import { responsive, high_resolution } from "../../layouts/responsive";
 

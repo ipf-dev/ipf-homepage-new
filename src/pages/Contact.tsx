@@ -5,7 +5,7 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import { responsive, high_resolution } from "../layouts/responsive";
 
 import colors from "../layouts/colors";
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 
 import Header from "../components/Header";
 import Footer from "../containers/Footer";

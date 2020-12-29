@@ -4,7 +4,7 @@ import { Link } from "gatsby-plugin-react-i18next";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
 
 import colors from "../layouts/colors";
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 
 import { responsive, high_resolution } from "../layouts/responsive";
 

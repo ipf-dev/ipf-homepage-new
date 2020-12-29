@@ -5,10 +5,10 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import { getNewsData } from "../api/getNewsData";
 
 import Container from "../components/Container";
-import NewsItemDesktop from "../components/NewsItemDesktop";
-import NewsItemMobile from "../components/NewsItemMobile";
-import NewsItemDescription from "../components/NewsItemDescription";
-import NewsItemSkeleton from "../components/NewsItemSkeleton";
+import NewsItemDesktop from "../components/NewsItem/NewsItemDesktop";
+import NewsItemMobile from "../components/NewsItem/NewsItemMobile";
+import NewsItemDescription from "../components/NewsItem/NewsItemDescription";
+import NewsItemSkeleton from "../components/NewsItem/NewsItemSkeleton";
 
 export const NewsItemDescriptionStyled = styled(NewsItemDescription)`
   height: 6.3rem;

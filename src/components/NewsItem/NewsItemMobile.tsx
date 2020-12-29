@@ -7,13 +7,13 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import {
   NewsDataType,
   NewsItemDescriptionStyled,
-} from "../containers/NewsItemPreview";
-import NewsItemContainer from "../components/NewsItemContainer";
-import { NewsItemContainerSkeleton } from "../components/NewsItemSkeleton";
-import NewsItemPublisher from "../components/NewsItemPublisher";
-import NewsItemTitle from "../components/NewsItemTitle";
-import NewsItemDescription from "../components/NewsItemDescription";
-import NewsItemDate from "../components/NewsItemDate";
+} from "../../containers/NewsItemPreview";
+import NewsItemContainer from "./NewsItemContainer";
+import { NewsItemContainerSkeleton } from "./NewsItemSkeleton";
+import NewsItemPublisher from "./NewsItemPublisher";
+import NewsItemTitle from "./NewsItemTitle";
+import NewsItemDescription from "./NewsItemDescription";
+import NewsItemDate from "./NewsItemDate";
 
 type NewsItemMobileProps = {
   newsData: NewsDataType[];

@@ -4,7 +4,7 @@ import { Translation } from "gatsby-plugin-react-i18next";
 
 import colors from "../../layouts/colors";
 import { high_resolution, responsive } from "../../layouts/responsive";
-import Typography from "../../assets/Typography";
+import Typography from "../../layouts/Typography";
 
 import Container from "../../components/Container";
 import SubTitle from "../../components/SubTitle";

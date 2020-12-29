@@ -2,7 +2,7 @@ import React, { ReactEventHandler } from "react";
 import styled from "styled-components";
 
 import colors from "../layouts/colors";
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 import { high_resolution } from "../layouts/responsive";
 
 import arrow_right from "../assets/images/arrow_right.png";

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 
 const SubTitle = styled.p`
   ${Typography("heading1")};

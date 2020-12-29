@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 
 import { high_resolution, responsive } from "../layouts/responsive";
 

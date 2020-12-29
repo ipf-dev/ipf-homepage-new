@@ -6,7 +6,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import { responsive } from "../../layouts/responsive";
 
 import colors from "../../layouts/colors";
-import Typography from "../../assets/Typography";
+import Typography from "../../layouts/Typography";
 
 import Container from "../../components/Container";
 

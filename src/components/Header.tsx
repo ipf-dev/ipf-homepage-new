@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { responsive } from "../layouts/responsive";
 import colors from "../layouts/colors";
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 
 import Navigation from "../containers/Navigation";
 

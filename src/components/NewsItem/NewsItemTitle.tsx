@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Typography from "../assets/Typography";
+import Typography from "../../layouts/Typography";
 
 const NewsItemHeader = styled.p`
   ${Typography("body", 1.6, 700)};

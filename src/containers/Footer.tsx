@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 import { responsive, high_resolution } from "../layouts/responsive";
 
 import colors from "../layouts/colors";
-import Typography from "../assets/Typography";
+import Typography from "../layouts/Typography";
 
 import Button from "../components/Button";
 import Container from "../components/Container";

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Translation, useI18next } from "gatsby-plugin-react-i18next";
 
-import Typography from "../../assets/Typography";
+import Typography from "../../layouts/Typography";
 import { responsive } from "../../layouts/responsive";
 
 import Container from "../../components/Container";
