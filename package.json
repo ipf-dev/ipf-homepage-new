@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://github.com/ipf-dev/ipf-homepage-new",
   "dependencies": {
-    "@tapas/ui": "https://s3.ap-northeast-2.amazonaws.com/ui.spindlebooks.com/tapas-ui-1.1.5.tgz",
+    "@ipf-dev/web-spindle-design-system": "2.0.17",
     "@types/styled-components": "^5.1.9",
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^3.4.2",
