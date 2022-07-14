@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import {
   SpindleThemeProvider,
-  Pagination,
+  // Pagination,
 } from '@ipf-dev/web-spindle-design-system';
 import Skeleton from 'react-loading-skeleton';
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
@@ -14,6 +14,7 @@ import NewsItemPublisher from '../components/NewsItem/NewsItemPublisher';
 import NewsItemTitle from '../components/NewsItem/NewsItemTitle';
 import NewsItemDate from '../components/NewsItem/NewsItemDate';
 import Container from '../components/Container';
+import Pagination from '../components/Pagination';
 import Footer from '../containers/Footer';
 import { NewsDataType, emptyNewsData } from '../containers/NewsItemPreview';
 
