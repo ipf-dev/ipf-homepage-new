@@ -85,6 +85,13 @@
   "HPG-86": "사업 및 제휴: biz@iportfolio.co.kr\n인터뷰 및 취재: pr@iportfolio.co.kr\n채용 문의: jobs@iportfolio.co.kr\n기타 문의: contact@iportfolio.co.kr",
   "HPG-87": "전화번호",
   "HPG-88": "회사소개자료",
+  "HPG-89": "청년친화강소기업(전 분야) 선정",
+  "HPG-90": "BETT Finalist 선정(2년 연속)",
+  "HPG-91": "대한민국 교육브랜드 대상 수상",
+  "HPG-92": "미래창조경영 우수기업 교육콘텐츠부문 대상 수상",
+  "HPG-93": "청년친화강소기업(전 분야) 선정(2년 연속)",
+  "HPG-94": "프리미엄 스피킹 프로그램 SPEAKING & (스피킹앤) 런칭",
+  "HPG-95": "Oxford Reading Club 유럽 공교육 도입",
 
   "TEXT-01": "Reform Education",
   "TEXT-02": "About",
@@ -123,5 +130,8 @@
   "TEXT-35": "0505-333-8288",
   "TEXT-36": "Transform the way people learn and teach English",
   "TEXT-36-M": "Transform the way people learn & teach English",
-  "TEXT-37": "지원하기"
+  "TEXT-37": "지원하기",
+
+  "YEAR-2021": "2021",
+  "YEAR-2022": "2022"
 }

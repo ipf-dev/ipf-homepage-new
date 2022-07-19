@@ -85,6 +85,13 @@
   "HPG-86": "Business & Partnership: biz@iportfolio.co.kr\nInterview & News: pr@iportfolio.co.kr\nRecruit: jobs@iportfolio.co.kr\nOthers: contact@iportfolio.co.kr",
   "HPG-87": "Phone",
   "HPG-88": "Company Brochure",
+  "HPG-89": "Shortlisted for Youth Friendly Small Giant Company",
+  "HPG-90": "Shortlisted for 2021 BETT Finalist (2 consecutive years)",
+  "HPG-91": "Won the 2021 Korea Educational Brand Awards",
+  "HPG-92": "Won the 2021 MONEYTODAY Future Creative Superiority Company Education Sector Awards",
+  "HPG-93": "Shortlisted for Youth Friendly Small Giants (2 consecutive years)",
+  "HPG-94": "Launched premium English speaking program SPEAKING &",
+  "HPG-95": "Public schools in Europe adopted Oxford Reading Club",
 
   "TEXT-01": "Reform Education",
   "TEXT-02": "About",
@@ -123,5 +130,8 @@
   "TEXT-35": "0505-333-8288",
   "TEXT-36": "Transform the way people learn and teach English",
   "TEXT-36-M": "Transform the way people learn & teach English",
-  "TEXT-37": "Apply"
+  "TEXT-37": "Apply",
+
+  "YEAR-2021": "2021",
+  "YEAR-2022": "2022"
 }
