@@ -52,10 +52,7 @@ const FloatingButton = () => {
 
   return (
     <FloatingButtonContainer style={{ bottom: `${bottom}rem` }}>
-      <Button
-        href="https://www.notion.so/3c4dc91633c34434aa558bcc45afca97"
-        target="_blank"
-      >
+      <Button href="https://iportfolio.oopy.io/career" target="_blank">
         우리가 일하는 방법
       </Button>
     </FloatingButtonContainer>
