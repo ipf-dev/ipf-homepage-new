@@ -57,3 +57,12 @@ src
 static              # image used for open graph protocol
 └──og.png
 ```
+
+## Trouble Shooting
+
+### 배포 명령어 실행시 인증 에러(403) 발생 (macOS 환경)
+
+gh-pages 명령어 실행시 Credential 정보를 macOS Keychain에 저장하고 참조합니다. 인증에 실패하고 있거나, 인증 과정에서 다른 계정 정보로 인증을 했다면 기존 정보를 초기화해서 재시도할 수 있습니다.
+
+- 참고: [Updating credentials from the macOS Keychain
+  ](https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain)
