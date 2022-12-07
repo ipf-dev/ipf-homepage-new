@@ -83,7 +83,7 @@ export default function BettSection() {
           <DescriptionWrapper>
             <DescriptionStyled>{t('TEXT-11')}</DescriptionStyled>
             <ButtonStyled
-              href="https://forms.gle/jFP8JogQStEGRGMu5"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScxDuKyD0ohIk58YVdE83FryqtCFFvTSVtG_Os_ZtD7stTpRg/viewform"
               target="_blank"
             >
               {t('TEXT-12')}
