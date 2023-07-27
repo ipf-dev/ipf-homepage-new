@@ -139,7 +139,17 @@ function displayJobDetail(jobsDetailData: [JobDetailType]) {
           <DiscList key={`${jobDetail.title.replace('\n', '')}_${index}`}>
             <Heading4>{jobDetail.title}</Heading4>
             <CircleList>
-              <Body3 as="li">{jobDetail.content}</Body3>
+              {jobDetail.content.split('\n').map((value, index, arr) => {
+                if (index === arr.length - 1) {
+                  return null;
+                }
+
+                return (
+                  <Body3 as="li" key={value}>
+                    {value}
+                  </Body3>
+                );
+              })}
             </CircleList>
           </DiscList>
         );
