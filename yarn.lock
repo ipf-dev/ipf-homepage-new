@@ -1541,9 +1541,9 @@
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
 "@ipf-dev/eslint-config-iportfolio@^0.2.5":
-  version "0.7.0"
-  resolved "https://npm.pkg.github.com/download/@ipf-dev/eslint-config-iportfolio/0.7.0/ab4b6bcbcf2459775a34e7f0e29edd924e1f6faba1f15375defcdab61c133969#cf1fba25d7a8b8263a79f727cfed4b7c4acf68b3"
-  integrity sha512-hI4FObEU0G+wIh/iMP3IsyCDi8pR4Uo25cv53Lt1INIELDAb50fBUvBs2fP4SG4OqeJr2uI2LsfqLHckKBeoyw==
+  version "1.0.4"
+  resolved "https://npm.pkg.github.com/download/@ipf-dev/eslint-config-iportfolio/1.0.4/9f50a76033312eaca4d619566c7dbfb24f17cf73#9f50a76033312eaca4d619566c7dbfb24f17cf73"
+  integrity sha512-j2aoLixwaN4u5h3sF6XsUpTeA7NYhsZc6jcfsM6KivduND1l2kV+Lx0lAha7fg7wP00/fyL4e9goBgLNnOkTiA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.7.0"
     "@typescript-eslint/parser" "^4.7.0"
