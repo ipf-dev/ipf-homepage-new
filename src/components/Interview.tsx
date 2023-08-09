@@ -25,8 +25,6 @@ import img_interviewee_helim from '../assets/images/Career/img_interviewee_helim
 import img_interviewee_helim_2x from '../assets/images/Career/img_interviewee_helim@2x.png';
 import img_interviewee_jpark from '../assets/images/Career/img_interviewee_jpark.png';
 import img_interviewee_jpark_2x from '../assets/images/Career/img_interviewee_jpark@2x.png';
-import img_interviewee_tkim from '../assets/images/Career/img_interviewee_tkim.png';
-import img_interviewee_tkim_2x from '../assets/images/Career/img_interviewee_tkim@2x.png';
 
 const InterviewData = [
   {
@@ -43,11 +41,6 @@ const InterviewData = [
     profile: 'jpark',
     title: <Translation>{(t) => t('HPG-48')}</Translation>,
     quote: <Translation>{(t) => t('HPG-47')}</Translation>,
-  },
-  {
-    profile: 'tkim',
-    title: <Translation>{(t) => t('HPG-52')}</Translation>,
-    quote: <Translation>{(t) => t('HPG-51')}</Translation>,
   },
 ];
 
@@ -68,12 +61,6 @@ const profilePic: any = {
     background-image: url(${img_interviewee_jpark});
     @media ${high_resolution} {
       background-image: url(${img_interviewee_jpark_2x});
-    }
-  `,
-  tkim: css`
-    background-image: url(${img_interviewee_tkim});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_tkim_2x});
     }
   `,
 };
