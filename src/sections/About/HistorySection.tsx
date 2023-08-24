@@ -218,7 +218,6 @@ export default function HistorySection() {
             },
             { month: t('TEXT-23'), items: [t('HPG-29')] },
           ]}
-          style={{ marginBottom: 0 }}
         />
         <TimeLine
           year={t('YEAR-2021')}
@@ -236,7 +235,6 @@ export default function HistorySection() {
               items: [t('HPG-92')],
             },
           ]}
-          style={{ marginBottom: 0 }}
         />
         <TimeLine
           year={t('YEAR-2022')}
@@ -250,7 +248,6 @@ export default function HistorySection() {
               items: [t('HPG-95')],
             },
           ]}
-          style={{ marginBottom: 0 }}
         />
         <TimeLine hidden year="" description={[{ month: '', items: [''] }]} />
       </HistoryDescriptionContainer>
