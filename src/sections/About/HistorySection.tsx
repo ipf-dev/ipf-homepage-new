@@ -241,11 +241,40 @@ export default function HistorySection() {
           description={[
             {
               month: t('MONTH-1'),
-              items: [t('HPG-93'), t('HPG-94')],
+              items: [t('HPG-93')],
             },
             {
               month: t('MONTH-3'),
-              items: [t('HPG-95')],
+              items: [t('HPG-94')],
+            },
+            {
+              month: t('MONTH-6'),
+              items: [t('HPG-95'), t('HPG-96')],
+            },
+            {
+              month: t('MONTH-9'),
+              items: [t('HPG-97')],
+            },
+          ]}
+        />
+        <TimeLine
+          year={t('YEAR-2023')}
+          description={[
+            {
+              month: t('MONTH-1'),
+              items: [t('HPG-98')],
+            },
+            {
+              month: t('MONTH-5'),
+              items: [t('HPG-99')],
+            },
+            {
+              month: t('MONTH-7'),
+              items: [t('HPG-100')],
+            },
+            {
+              month: t('MONTH-8'),
+              items: [t('HPG-101')],
             },
           ]}
         />
