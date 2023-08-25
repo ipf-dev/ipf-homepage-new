@@ -106,15 +106,6 @@
   "TEXT-13": "Mission",
   "TEXT-14": "Core Values",
   "TEXT-15": "History",
-  "TEXT-16": "Jan",
-  "TEXT-17": "Feb",
-  "TEXT-18": "Mar",
-  "TEXT-19": "Jun",
-  "TEXT-20": "Jul",
-  "TEXT-21": "Aug",
-  "TEXT-22": "Sep",
-  "TEXT-23": "Nov",
-  "TEXT-24": "Dec",
   "TEXT-33": "Spindle in Action",
   "TEXT-34": "Contact Us",
   "TEXT-35": "0505-333-8288 (Business hours 9:00 ~ 18:00)",
@@ -131,5 +122,15 @@
   "YEAR-2019": "2019",
   "YEAR-2020": "2020",
   "YEAR-2021": "2021",
-  "YEAR-2022": "2022"
+  "YEAR-2022": "2022",
+
+  "MONTH-1": "Jan",
+  "MONTH-2": "Feb",
+  "MONTH-3": "Mar",
+  "MONTH-6": "Jun",
+  "MONTH-7": "Jul",
+  "MONTH-8": "Aug",
+  "MONTH-9": "Sep",
+  "MONTH-11": "Nov",
+  "MONTH-12": "Dec"
 }

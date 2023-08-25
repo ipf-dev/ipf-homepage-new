@@ -153,85 +153,85 @@ export default function HistorySection() {
       <HistoryDescriptionContainer>
         <TimeLine
           year={t('YEAR-2011')}
-          description={[{ month: t('TEXT-16'), items: [t('HPG-9')] }]}
+          description={[{ month: t('MONTH-1'), items: [t('HPG-9')] }]}
         />
         <TimeLine
           year={t('YEAR-2013')}
           description={[
-            { month: t('TEXT-16'), items: [t('HPG-10')] },
-            { month: t('TEXT-21'), items: [t('HPG-12')] },
+            { month: t('MONTH-1'), items: [t('HPG-10')] },
+            { month: t('MONTH-8'), items: [t('HPG-12')] },
           ]}
         />
         <TimeLine
           year={t('YEAR-2014')}
           description={[
-            { month: t('TEXT-19'), items: [t('HPG-12')] },
-            { month: t('TEXT-23'), items: [t('HPG-13')] },
+            { month: t('MONTH-6'), items: [t('HPG-12')] },
+            { month: t('MONTH-11'), items: [t('HPG-13')] },
           ]}
         />
         <TimeLine
           year={t('YEAR-2016')}
           description={[
-            { month: t('TEXT-20'), items: [t('HPG-14')] },
-            { month: t('TEXT-22'), items: [t('HPG-15')] },
+            { month: t('MONTH-7'), items: [t('HPG-14')] },
+            { month: t('MONTH-9'), items: [t('HPG-15')] },
           ]}
         />
         <TimeLine
           year={t('YEAR-2017')}
           description={[
             {
-              month: t('TEXT-19'),
+              month: t('MONTH-6'),
               items: [t('HPG-16'), t('HPG-17')],
             },
-            { month: t('TEXT-20'), items: [t('HPG-18')] },
+            { month: t('MONTH-7'), items: [t('HPG-18')] },
             {
-              month: t('TEXT-21'),
+              month: t('MONTH-8'),
               items: [t('HPG-19')],
             },
-            { month: t('TEXT-24'), items: [t('HPG-20')] },
+            { month: t('MONTH-12'), items: [t('HPG-20')] },
           ]}
         />
         <TimeLine
           year={t('YEAR-2018')}
           description={[
-            { month: t('TEXT-22'), items: [t('HPG-21')] },
-            { month: t('TEXT-24'), items: [t('HPG-22')] },
+            { month: t('MONTH-9'), items: [t('HPG-21')] },
+            { month: t('MONTH-12'), items: [t('HPG-22')] },
           ]}
         />
         <TimeLine
           year={t('YEAR-2019')}
           description={[
-            { month: t('TEXT-17'), items: [t('HPG-23')] },
-            { month: t('TEXT-24'), items: [t('HPG-24')] },
+            { month: t('MONTH-2'), items: [t('HPG-23')] },
+            { month: t('MONTH-12'), items: [t('HPG-24')] },
           ]}
         />
         <TimeLine
           year={t('YEAR-2020')}
           description={[
             {
-              month: t('TEXT-16'),
+              month: t('MONTH-1'),
               items: [t('HPG-25'), t('HPG-26')],
             },
             {
-              month: t('TEXT-18'),
+              month: t('MONTH-3'),
               items: [t('HPG-27'), t('HPG-28')],
             },
-            { month: t('TEXT-23'), items: [t('HPG-29')] },
+            { month: t('MONTH-11'), items: [t('HPG-29')] },
           ]}
         />
         <TimeLine
           year={t('YEAR-2021')}
           description={[
             {
-              month: t('TEXT-16'),
+              month: t('MONTH-1'),
               items: [t('HPG-89'), t('HPG-90')],
             },
             {
-              month: t('TEXT-19'),
+              month: t('MONTH-6'),
               items: [t('HPG-91')],
             },
             {
-              month: t('TEXT-23'),
+              month: t('MONTH-11'),
               items: [t('HPG-92')],
             },
           ]}
@@ -240,11 +240,11 @@ export default function HistorySection() {
           year={t('YEAR-2022')}
           description={[
             {
-              month: t('TEXT-16'),
+              month: t('MONTH-1'),
               items: [t('HPG-93'), t('HPG-94')],
             },
             {
-              month: t('TEXT-18'),
+              month: t('MONTH-3'),
               items: [t('HPG-95')],
             },
           ]}
