@@ -152,32 +152,32 @@ export default function HistorySection() {
       <PhotoCarouselAbout />
       <HistoryDescriptionContainer>
         <TimeLine
-          year={t('TEXT-25')}
+          year={t('YEAR-2011')}
           description={[{ month: t('TEXT-16'), items: [t('HPG-9')] }]}
         />
         <TimeLine
-          year={t('TEXT-26')}
+          year={t('YEAR-2013')}
           description={[
             { month: t('TEXT-16'), items: [t('HPG-10')] },
             { month: t('TEXT-21'), items: [t('HPG-12')] },
           ]}
         />
         <TimeLine
-          year={t('TEXT-27')}
+          year={t('YEAR-2014')}
           description={[
             { month: t('TEXT-19'), items: [t('HPG-12')] },
             { month: t('TEXT-23'), items: [t('HPG-13')] },
           ]}
         />
         <TimeLine
-          year={t('TEXT-28')}
+          year={t('YEAR-2016')}
           description={[
             { month: t('TEXT-20'), items: [t('HPG-14')] },
             { month: t('TEXT-22'), items: [t('HPG-15')] },
           ]}
         />
         <TimeLine
-          year={t('TEXT-29')}
+          year={t('YEAR-2017')}
           description={[
             {
               month: t('TEXT-19'),
@@ -192,21 +192,21 @@ export default function HistorySection() {
           ]}
         />
         <TimeLine
-          year={t('TEXT-30')}
+          year={t('YEAR-2018')}
           description={[
             { month: t('TEXT-22'), items: [t('HPG-21')] },
             { month: t('TEXT-24'), items: [t('HPG-22')] },
           ]}
         />
         <TimeLine
-          year={t('TEXT-31')}
+          year={t('YEAR-2019')}
           description={[
             { month: t('TEXT-17'), items: [t('HPG-23')] },
             { month: t('TEXT-24'), items: [t('HPG-24')] },
           ]}
         />
         <TimeLine
-          year={t('TEXT-32')}
+          year={t('YEAR-2020')}
           description={[
             {
               month: t('TEXT-16'),
