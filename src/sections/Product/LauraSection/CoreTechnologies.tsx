@@ -33,14 +33,14 @@ const TitleWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2.4rem;
-  align-items: center;
-  justify-content: space-between;
 
   @media ${responsive.conditionForTablet} {
-    flex-direction: row;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 6.4rem;
   }
 `;
