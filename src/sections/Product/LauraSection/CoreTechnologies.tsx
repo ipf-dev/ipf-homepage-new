@@ -53,8 +53,8 @@ export default function CoreTechnologies() {
       <Content>
         <CoreTechnologyItem
           img={{
-            src: img_product_laura_enterprise_generative_ai,
-            srcSet: `${img_product_laura_enterprise_generative_ai} 1x, ${img_product_laura_enterprise_generative_ai_2x} 2x`,
+            src: img_product_laura_spindle_speech_ai,
+            srcSet: `${img_product_laura_spindle_speech_ai} 1x, ${img_product_laura_spindle_speech_ai_2x} 2x`,
             alt: 'Spindle Speech AI icon',
           }}
           title="Spindle Speech AI"
@@ -73,8 +73,8 @@ export default function CoreTechnologies() {
 
         <CoreTechnologyItem
           img={{
-            src: img_product_laura_spindle_speech_ai,
-            srcSet: `${img_product_laura_spindle_speech_ai} 1x, ${img_product_laura_spindle_speech_ai_2x} 2x`,
+            src: img_product_laura_enterprise_generative_ai,
+            srcSet: `${img_product_laura_enterprise_generative_ai} 1x, ${img_product_laura_enterprise_generative_ai_2x} 2x`,
             alt: 'Enterprise Generative AI icon',
           }}
           title="Enterprise Generative AI"
