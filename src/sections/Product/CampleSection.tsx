@@ -15,11 +15,14 @@ import img_product_cample from '../../assets/images/Product/img_product_cample.p
 import img_product_cample_2x from '../../assets/images/Product/img_product_cample@2x.png';
 
 const ContainerStyled = styled(Container)`
-  padding-bottom: 27.9rem;
+  padding-bottom: 20rem;
 
   flex-direction: column-reverse;
   @media ${responsive.conditionForTablet} {
     flex-direction: row;
+  }
+  @media ${responsive.conditionForDesktop} {
+    padding-bottom: 30rem;
   }
 `;
 

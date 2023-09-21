@@ -41,6 +41,9 @@ const Content = styled.div`
   @media ${responsive.conditionForTablet} {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media ${responsive.conditionForDesktop} {
     gap: 6.4rem;
   }
 `;
