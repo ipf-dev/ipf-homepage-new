@@ -17,6 +17,7 @@ const Image = styled.img`
 `;
 
 const Title = styled.h4`
+  text-align: center;
   margin: 0;
   ${Typography('subheading')};
   color: #10a6e9;
