@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 import { responsive, high_resolution } from '../../layouts/responsive';
 
@@ -89,6 +90,8 @@ const Services = styled.div`
 `;
 
 export default function CampleSection() {
+  const { t } = useTranslation();
+
   return (
     <ContainerStyled
       data-sal="slide-up"
@@ -98,11 +101,7 @@ export default function CampleSection() {
       <ProductImgStyled />
       <ColumnStyled>
         <Logo />
-        <DescriptionStyled>
-          Cample™은 언어 학습에 특화된 웹 기반 실시간 화상 수업 솔루션 입니다.
-          최적화된 온라인 학습 환경을 조성하기 위해 다양한 수업 활용 도구와
-          학습자의 수업 집중력 향상을 위한 관리 기능을 제공합니다.
-        </DescriptionStyled>
+        <DescriptionStyled>{t('HPG-106')}</DescriptionStyled>
         <Services>
           <ServiceImg service="web" />
           <ServiceImg service="ios" />

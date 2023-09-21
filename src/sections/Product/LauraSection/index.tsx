@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 import ServiceImg from '../../../components/ServiceImg';
 import { responsive, high_resolution } from '../../../layouts/responsive';
@@ -83,6 +84,8 @@ const ProductImgStyled = styled(ProductImg)`
 `;
 
 export default function LauraSection() {
+  const { t } = useTranslation();
+
   return (
     <ContainerStyled
       data-sal="slide-up"
@@ -91,12 +94,7 @@ export default function LauraSection() {
     >
       <ColumnStyled>
         <Logo />
-        <DescriptionStyled>
-          LAURA™ (Language Assistant Utilizing Reading Analytics)는 맞춤형
-          학습을 위한 대화형 AI Tutor 솔루션입니다. 어린이 영어 학습자에게
-          특화된 발음 분석 엔진과 개인별 맞춤 대화가 가능한 AI Tutor를 통해
-          차별화된 언어 학습 경험을 제공합니다.
-        </DescriptionStyled>
+        <DescriptionStyled>{t('HPG-102')}</DescriptionStyled>
         <Services>
           <ServiceImg service="android" isViewer={false} />
         </Services>
