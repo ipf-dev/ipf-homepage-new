@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import ServiceImg from '../../../components/ServiceImg';
 import { responsive, high_resolution } from '../../../layouts/responsive';
 
 import Container from '../../../components/Container';
@@ -46,14 +47,15 @@ const Logo = styled.span`
 
 const DescriptionStyled = styled(Description)`
   width: 100%;
-  margin: 0;
+  margin: 0 0 2.4rem;
 
   @media ${responsive.conditionForDesktop} {
     width: 38.1rem;
+    margin-bottom: 4rem;
   }
 `;
 
-const Platforms = styled.div`
+const Services = styled.div`
   display: flex;
 `;
 
@@ -95,7 +97,9 @@ export default function LauraSection() {
           특화된 발음 분석 엔진과 개인별 맞춤 대화가 가능한 AI Tutor를 통해
           차별화된 언어 학습 경험을 제공합니다.
         </DescriptionStyled>
-        <Platforms />
+        <Services>
+          <ServiceImg service="android" isViewer={false} />
+        </Services>
       </ColumnStyled>
       <ProductImgStyled />
       <CoreTechnologies />
