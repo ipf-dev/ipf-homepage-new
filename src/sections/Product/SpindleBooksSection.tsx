@@ -16,6 +16,10 @@ import img_spindlebooks_ipad_2x from '../../assets/images/Product/img_spindleboo
 import img_spindlebooks_solutions from '../../assets/images/Product/img_spindlebooks_solutions.png';
 import img_spindlebooks_solutions_2x from '../../assets/images/Product/img_spindlebooks_solutions@2x.png';
 
+const ContainerStyled = styled(Container)`
+  padding-bottom: 1rem;
+`;
+
 const ColumnStyled = styled(Column)`
   @media ${responsive.conditionForTablet} {
     width: 30rem;
@@ -94,7 +98,7 @@ const ProductImgStyled = styled(ProductImg)`
 export default function SpindleBooksSection() {
   const { t } = useTranslation();
   return (
-    <Container
+    <ContainerStyled
       data-sal="slide-up"
       data-sal-duration="1000"
       data-sal-easing="ease"
@@ -109,6 +113,6 @@ export default function SpindleBooksSection() {
         data-sal-duration="1000"
         data-sal-easing="ease"
       />
-    </Container>
+    </ContainerStyled>
   );
 }
