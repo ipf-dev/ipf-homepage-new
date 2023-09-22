@@ -56,10 +56,6 @@ const DescriptionStyled = styled(Description)`
   }
 `;
 
-const Services = styled.div`
-  display: flex;
-`;
-
 const ProductImgStyled = styled(ProductImg)`
   width: 100%;
   aspect-ratio: 1.6;
@@ -95,9 +91,6 @@ export default function LauraSection() {
       <ColumnStyled>
         <Logo />
         <DescriptionStyled>{t('HPG-102')}</DescriptionStyled>
-        <Services>
-          <ServiceImg service="android" isViewer={false} />
-        </Services>
       </ColumnStyled>
       <ProductImgStyled />
       <CoreTechnologies />
