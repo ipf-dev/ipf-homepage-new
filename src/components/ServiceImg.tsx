@@ -1,7 +1,5 @@
 import React from 'react';
 
-import img_service_android from '../assets/images/Product/img_service_android.png';
-import img_service_android_2x from '../assets/images/Product/img_service_android@2x.png';
 import img_service_android_viewer from '../assets/images/Product/img_service_android_viewer.png';
 import img_service_android_viewer_2x from '../assets/images/Product/img_service_android_viewer@2x.png';
 import img_service_ios_viewer from '../assets/images/Product/img_service_ios_viewer.png';
@@ -11,20 +9,14 @@ import img_service_web_viewer_2x from '../assets/images/Product/img_service_web_
 
 interface Props {
   service: 'android' | 'ios' | 'web';
-  isViewer?: boolean;
 }
 
-export default function ServiceImg({ service, isViewer = true }: Props) {
+export default function ServiceImg({ service }: Props) {
   const imageSrcByService = {
-    android: isViewer
-      ? {
-          x1: img_service_android_viewer,
-          x2: img_service_android_viewer_2x,
-        }
-      : {
-          x1: img_service_android,
-          x2: img_service_android_2x,
-        },
+    android: {
+      x1: img_service_android_viewer,
+      x2: img_service_android_viewer_2x,
+    },
     ios: {
       x1: img_service_ios_viewer,
       x2: img_service_ios_viewer_2x,
