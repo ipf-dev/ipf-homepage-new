@@ -17,7 +17,8 @@ export default function JobApplyPanel() {
         <Trans i18nKey="TEXT-38" components={{ span: <span /> }} />
       </TextWrapper>
       <Button
-        href="mailto:jobs@iportfolio.co.kr"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfU4YZdQn0UVueKMe0faxoAumdCkzQBfhuGXnyMXtPHn7xQTw/viewform"
+        target="_blank"
         style={{ width: '100%', maxWidth: '29.6rem' }}
       >
         {t('TEXT-37')}
