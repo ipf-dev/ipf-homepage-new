@@ -279,16 +279,16 @@ function Interview() {
       infinite
     >
       <SliderStyled>
-        {Object.keys(InterviewData).map(function (key: string, index) {
+        {InterviewData.map(({ profile, title, quote }, index) => {
           return (
-            <Slide key={key} index={index}>
+            <Slide key={profile} index={index}>
               <QuoteContainer>
-                <Profile profileImg={(InterviewData as any)[key].profile} />
+                <Profile profileImg={profile} />
                 <Quote>
-                  {(InterviewData as any)[key].quote}
+                  {quote}
                   <br />
                 </Quote>
-                <Name>{(InterviewData as any)[key].title}</Name>
+                <Name>{title}</Name>
               </QuoteContainer>
             </Slide>
           );
