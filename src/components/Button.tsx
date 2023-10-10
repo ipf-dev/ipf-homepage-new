@@ -1,9 +1,9 @@
 import React, { ReactEventHandler } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import colors from '../layouts/colors';
 import Typography from '../layouts/Typography';
-import { high_resolution, responsive } from '../layouts/responsive';
+import { high_resolution } from '../layouts/responsive';
 
 import arrow_right from '../assets/images/arrow_right.png';
 import arrow_right_2x from '../assets/images/arrow_right@2x.png';
@@ -32,24 +32,29 @@ const ButtonWrapper = styled.div`
   height: 53px;
 
   white-space: nowrap;
+`;
 
-  &:hover a {
+const ButtonComponent = styled.a<{ hasIcon: boolean }>`
+  background-color: ${colors.primary};
+  &:hover {
     background-color: #f16a4f;
+
+    ${({ hasIcon }) =>
+      hasIcon &&
+      `
     padding-right: 96px;
 
     :after {
       left: 56px;
       transition: left 0.1s ease-in-out;
-    }
+    }    
+    `}
   }
 
-  &:active a {
+  &:active {
     background-color: #d7482b;
   }
-`;
 
-const ButtonComponent = styled.a`
-  background-color: ${colors.primary};
   padding: 16px 80px 16px 24px;
   width: 100%;
   height: 100%;
@@ -94,6 +99,8 @@ function Button({
   filename = '',
   ...styleProps
 }: Props) {
+  const hasIcon = !!icon;
+
   return (
     <ButtonWrapper {...styleProps}>
       <ButtonComponent
@@ -101,11 +108,12 @@ function Button({
         target={target}
         onClick={onClick}
         download={filename}
+        hasIcon={hasIcon}
       >
         {children}
       </ButtonComponent>
 
-      {!!icon && <Icon icon={icon} />}
+      {hasIcon && <Icon icon={icon} />}
     </ButtonWrapper>
   );
 }
