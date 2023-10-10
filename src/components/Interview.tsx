@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css, FlattenSimpleInterpolation } from 'styled-components';
+import styled from 'styled-components';
 import {
   CarouselProvider,
   Slider,
@@ -43,105 +43,84 @@ const InterviewData = [
     profile: 'okwon',
     title: <Translation>{(t) => t('INTVW-OKWON-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-OKWON-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_okwon,
+      x2: img_interviewee_okwon_2x,
+    },
   },
   {
     profile: 'hcho',
     title: <Translation>{(t) => t('INTVW-HCHO-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-HCHO-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_hcho,
+      x2: img_interviewee_hcho_2x,
+    },
   },
   {
     profile: 'mkim',
     title: <Translation>{(t) => t('INTVW-MKIM-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-MKIM-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_mkim,
+      x2: img_interviewee_mkim_2x,
+    },
   },
   {
     profile: 'hjpark',
     title: <Translation>{(t) => t('INTVW-HJPARK-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-HJPARK-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_hjpark,
+      x2: img_interviewee_hjpark_2x,
+    },
   },
   {
     profile: 'dwjung',
     title: <Translation>{(t) => t('INTVW-DWJUNG-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-DWJUNG-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_dwjung,
+      x2: img_interviewee_dwjung_2x,
+    },
   },
   {
     profile: 'sychoi',
     title: <Translation>{(t) => t('INTVW-SYCHOI-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-SYCHOI-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_sychoi,
+      x2: img_interviewee_sychoi_2x,
+    },
   },
   {
     profile: 'blee',
     title: <Translation>{(t) => t('INTVW-BLEE-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-BLEE-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_blee,
+      x2: img_interviewee_blee_2x,
+    },
   },
   {
     profile: 'dssong',
     title: <Translation>{(t) => t('INTVW-DSSONG-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-DSSONG-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_dssong,
+      x2: img_interviewee_dssong_2x,
+    },
   },
   {
     profile: 'jelee',
     title: <Translation>{(t) => t('INTVW-JELEE-TITLE')}</Translation>,
     quote: <Translation>{(t) => t('INTVW-JELEE-QUOTE')}</Translation>,
+    imgSrc: {
+      x1: img_interviewee_jelee,
+      x2: img_interviewee_jelee_2x,
+    },
   },
 ];
-
-const profilePic: Record<string, FlattenSimpleInterpolation> = {
-  okwon: css`
-    background-image: url(${img_interviewee_okwon});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_okwon_2x});
-    }
-  `,
-  hcho: css`
-    background-image: url(${img_interviewee_hcho});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_hcho_2x});
-    }
-  `,
-  mkim: css`
-    background-image: url(${img_interviewee_mkim});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_mkim_2x});
-    }
-  `,
-  hjpark: css`
-    background-image: url(${img_interviewee_hjpark});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_hjpark_2x});
-    }
-  `,
-  dwjung: css`
-    background-image: url(${img_interviewee_dwjung});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_dwjung_2x});
-    }
-  `,
-  sychoi: css`
-    background-image: url(${img_interviewee_sychoi});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_sychoi_2x});
-    }
-  `,
-  blee: css`
-    background-image: url(${img_interviewee_blee});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_blee_2x});
-    }
-  `,
-  dssong: css`
-    background-image: url(${img_interviewee_dssong});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_dssong_2x});
-    }
-  `,
-  jelee: css`
-    background-image: url(${img_interviewee_jelee});
-    @media ${high_resolution} {
-      background-image: url(${img_interviewee_jelee_2x});
-    }
-  `,
-};
 
 const CarouselProviderStyled = styled(CarouselProvider)`
   background-color: ${colors.gray1};
@@ -158,17 +137,16 @@ const CarouselProviderStyled = styled(CarouselProvider)`
   }
 `;
 
-type ProfileProps = {
-  profileImg: string;
-};
-
-const Profile = styled.span`
+const Profile = styled.span<{ imgSrc: { x1: string; x2: string } }>`
   align-self: center;
   width: 8rem;
   height: 8rem;
   background-size: cover;
 
-  ${(props: ProfileProps) => profilePic[props.profileImg]};
+  background-image: url(${({ imgSrc }) => imgSrc.x1});
+  @media ${high_resolution} {
+    background-image: url(${({ imgSrc }) => imgSrc.x2});
+  }
 `;
 
 const SliderStyled = styled(Slider)`
@@ -280,11 +258,11 @@ function Interview() {
       infinite
     >
       <SliderStyled>
-        {InterviewData.map(({ profile, title, quote }, index) => {
+        {InterviewData.map(({ profile, title, quote, imgSrc }, index) => {
           return (
             <Slide key={profile} index={index}>
               <QuoteContainer>
-                <Profile profileImg={profile} />
+                <Profile imgSrc={imgSrc} />
                 <Quote>
                   {quote}
                   <br />
