@@ -55,7 +55,7 @@ const ButtonComponent = styled.a<{ hasIcon: boolean }>`
     background-color: #d7482b;
   }
 
-  padding: 16px 80px 16px 24px;
+  padding: ${({ hasIcon }) => (hasIcon ? '16px 80px 16px 24px' : '16px 24px')};
   width: 100%;
   height: 100%;
   transition: all 0.1s ease-in-out;
