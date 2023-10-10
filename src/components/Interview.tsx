@@ -192,6 +192,7 @@ const Quote = styled.p`
   text-align: center;
   margin-top: 2.4rem;
   word-break: keep-all;
+  white-space: pre-line;
   padding: 0 2rem;
 
   @media ${responsive.conditionForTablet} {
