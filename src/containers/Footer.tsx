@@ -101,6 +101,16 @@ const NaverPostLink = styled.a`
   margin-left: 1.6rem;
 `;
 
+const DownloadButton = styled(Button).attrs({ className: 'download-button' })`
+  @media ${responsive.conditionForTablet} {
+    margin-left: 4rem;
+    transition: margin-left 0.1s ease-in-out;
+    &:hover {
+      margin-left: 2.4rem;
+    }
+  }
+`;
+
 export default function Footer() {
   const { language } = useI18next();
   const { t } = useTranslation();
@@ -116,16 +126,16 @@ export default function Footer() {
           <FacebookLink href="https://www.facebook.com/ipofo" target="_blank" />
           <NaverPostLink href="https://post.naver.com/ipofo" target="_blank" />
         </LinkContainer>
-        <Button
+        <DownloadButton
+          className="download-button"
           icon="download"
           href={language === 'en' ? iPortfolio_intro_en : iPortfolio_intro_ko}
           filename={
             language === 'en' ? `iPortfolio_intro_en` : `iPortfolio_intro_ko`
           }
-          footer
         >
           {t('HPG-88')}
-        </Button>
+        </DownloadButton>
       </ContainerStyled>
     </>
   );

@@ -19,15 +19,11 @@ type Props = {
   children: any;
   onClick?: ReactEventHandler;
   style?: React.CSSProperties;
+  className?: string;
   filename?: string;
-  footer?: boolean;
 };
 
-type ButtonWrapperProps = {
-  footer?: boolean;
-};
-
-const ButtonWrapper = styled.div<ButtonWrapperProps>`
+const ButtonWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
@@ -50,17 +46,6 @@ const ButtonWrapper = styled.div<ButtonWrapperProps>`
   &:active a {
     background-color: #d7482b;
   }
-  ${(props) =>
-    props.footer &&
-    css`
-      @media ${responsive.conditionForTablet} {
-        margin-left: 4rem;
-        transition: margin-left 0.1s ease-in-out;
-        &:hover {
-          margin-left: 2.4rem;
-        }
-      }
-    `}
 `;
 
 const ButtonComponent = styled.a`
@@ -106,12 +91,11 @@ function Button({
   target,
   onClick,
   children,
-  style,
   filename = '',
-  footer = false,
+  ...styleProps
 }: Props) {
   return (
-    <ButtonWrapper style={style} footer={footer}>
+    <ButtonWrapper {...styleProps}>
       <ButtonComponent
         href={href}
         target={target}
