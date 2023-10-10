@@ -58,7 +58,9 @@ export default function AboutSection() {
         <Label>{t('TEXT-02')}</Label>
         <SubTitleEng>{t('TEXT-03')}</SubTitleEng>
         <Description>{t('HPG-1')}</Description>
-        <Button onClick={() => navigate('/about')}>{t('HPG-4')}</Button>
+        <Button onClick={() => navigate('/about')} icon="arrow">
+          {t('HPG-4')}
+        </Button>
       </ColumnStyled>
       <WorldMap />
     </AboutContainer>

@@ -68,7 +68,9 @@ export default function ProductSection() {
         <Label>{t('TEXT-04')}</Label>
         <SubTitleEng>{t('TEXT-05')}</SubTitleEng>
         <Description>{t('HPG-2')}</Description>
-        <Button onClick={() => navigate('/product')}>{t('HPG-4')}</Button>
+        <Button onClick={() => navigate('/product')} icon="arrow">
+          {t('HPG-4')}
+        </Button>
       </ColumnStyled>
       <HomeProductImg
         data-sal="slide-up"

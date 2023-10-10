@@ -28,7 +28,9 @@ export default function NewsSection() {
       </Container>
       <NewsItemPreview />
       <Container style={{ paddingTop: '4rem' }}>
-        <Button onClick={() => navigate('/news')}>{t('HPG-4')}</Button>
+        <Button onClick={() => navigate('/news')} icon="arrow">
+          {t('HPG-4')}
+        </Button>
       </Container>
     </>
   );

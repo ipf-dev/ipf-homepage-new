@@ -85,6 +85,7 @@ export default function BettSection() {
             <ButtonStyled
               href="https://docs.google.com/forms/d/e/1FAIpQLScxDuKyD0ohIk58YVdE83FryqtCFFvTSVtG_Os_ZtD7stTpRg/viewform"
               target="_blank"
+              icon="arrow"
             >
               {t('TEXT-12')}
             </ButtonStyled>

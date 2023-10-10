@@ -80,11 +80,7 @@ const ButtonComponent = styled.a`
   ${Typography('body', 1.4, 700)};
 `;
 
-type IconProps = {
-  icon: ThemeType;
-};
-
-const Icon = styled.span`
+const Icon = styled.span<{ icon: ThemeType }>`
   position: absolute;
   width: 16px;
   height: 16px;
@@ -93,21 +89,19 @@ const Icon = styled.span`
 
   cursor: pointer;
 
-  background-image: ${(props: IconProps) =>
-    props.icon === 'arrow' ? `url(${arrow_right})` : `url(${download})`};
+  background-image: ${({ icon }) =>
+    icon === 'arrow' ? `url(${arrow_right})` : `url(${download})`};
   background-repeat: no-repeat;
   background-size: cover;
 
   @media ${high_resolution} {
-    background-image: ${(props: IconProps) =>
-      props.icon === 'arrow'
-        ? `url(${arrow_right_2x})`
-        : `url(${download_2x})`};
+    background-image: ${({ icon }) =>
+      icon === 'arrow' ? `url(${arrow_right_2x})` : `url(${download_2x})`};
   }
 `;
 
 function Button({
-  icon = 'arrow',
+  icon,
   href,
   target,
   onClick,
@@ -126,7 +120,8 @@ function Button({
       >
         {children}
       </ButtonComponent>
-      <Icon icon={icon} />
+
+      {!!icon && <Icon icon={icon} />}
     </ButtonWrapper>
   );
 }

@@ -1,20 +1,20 @@
 /* eslint-disable no-irregular-whitespace */
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React, { useEffect, useRef, useState } from 'react';
 import { graphql } from 'gatsby';
-import styled, { keyframes, css } from 'styled-components';
+import React, { useEffect, useRef, useState } from 'react';
+import styled, { css, keyframes } from 'styled-components';
 
+import Button from '../../components/Button';
 import Typography from '../../layouts/Typography';
 import colors from '../../layouts/colors';
-import Button from '../../components/Button';
 
 import NotionStyle from './Notions.style';
 
 import first from './images/first.png';
-import second from './images/second.png';
-import third from './images/third.png';
 import forth from './images/forth.png';
 import id_card from './images/id_card.png';
+import second from './images/second.png';
+import third from './images/third.png';
 import titleimg from './images/titleimg.png';
 
 const unfoldIn = keyframes`
@@ -187,7 +187,9 @@ const Yep2021 = () => {
                   onChange={() => setIsValid(false)}
                   isValid={isValid}
                 />
-                <Button onClick={onClickButton}>비밀번호 확인</Button>
+                <Button onClick={onClickButton} icon="arrow">
+                  비밀번호 확인
+                </Button>
               </Modal>
             </ModalBackground>
           </ModalContainer>
@@ -225,8 +227,8 @@ const Yep2021 = () => {
               <hr id="6631aaed-b4fc-45b4-87bc-02fb254115e7" />
               <br />
               <h2 id="382cfc56-1fe7-4789-80c3-76dc59c84f70" className="">
-                안녕하세요! <strong>위원장 장경화</strong>입니다. (a.k.a.
-                꽁시기🦹🏻‍♀️)
+                안녕하세요! <strong>위원장 장경화</strong>
+                입니다. (a.k.a. 꽁시기🦹🏻‍♀️)
               </h2>
               <p id="5f28ecb1-495c-40f0-ab6f-e0a471ae0381" className="">
                 사회적 거리 두기가 개편되었음에도 불구하고 계속해서 확진자가
@@ -387,8 +389,8 @@ const Yep2021 = () => {
               >
                 <li style={{ listStyleType: 'disc' }}>
                   사진 촬영 및 보정을 흔쾌히 수락해 주신{' '}
-                  <strong>홍진(아포폴 공식 촬영기사)</strong>님께 감사의 인사를
-                  전합니다. 💐
+                  <strong>홍진(아포폴 공식 촬영기사)</strong>
+                  님께 감사의 인사를 전합니다. 💐
                 </li>
               </ul>
               <h3 id="22616cde-49a9-45e3-bc70-b844e9ff50ed" className="">

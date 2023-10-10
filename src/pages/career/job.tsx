@@ -234,7 +234,9 @@ export default function Job({ location }: Props) {
           ? displayJobDetail(jobsData)
           : displayJobDetailSkeleton()}
         <ButtonWrapper>
-          <Button href="mailto:jobs@iportfolio.co.kr">지원하기</Button>
+          <Button href="mailto:jobs@iportfolio.co.kr" icon="arrow">
+            지원하기
+          </Button>
         </ButtonWrapper>
       </ContainerStyled>
       <Footer />
