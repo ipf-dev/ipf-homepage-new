@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
+import { useTranslation } from 'react-i18next';
 import Button from './Button';
 import { responsive } from '../layouts/responsive';
 
@@ -19,6 +20,8 @@ const FloatingButtonContainer = styled.div`
 `;
 
 const FloatingButton = () => {
+  const { t } = useTranslation();
+
   const [bottom, setBottom] = useState(2);
 
   const checkFooterHeight = () => {
@@ -53,7 +56,7 @@ const FloatingButton = () => {
   return (
     <FloatingButtonContainer style={{ bottom: `${bottom}rem` }}>
       <Button href="https://iportfolio.oopy.io/career" target="_blank">
-        우리가 일하는 방법
+        {t('TEXT-16')}
       </Button>
     </FloatingButtonContainer>
   );
