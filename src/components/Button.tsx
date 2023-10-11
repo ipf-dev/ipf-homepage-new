@@ -34,7 +34,7 @@ const ButtonWrapper = styled.div`
   white-space: nowrap;
 `;
 
-const ButtonComponent = styled.a<{ hasIcon: boolean }>`
+const ButtonStyled = styled.button<{ hasIcon: boolean }>`
   background-color: ${colors.primary};
   &:hover {
     background-color: #f16a4f;
@@ -100,18 +100,22 @@ function Button({
   ...styleProps
 }: Props) {
   const hasIcon = !!icon;
+  const isLink = typeof href === 'string';
 
   return (
     <ButtonWrapper {...styleProps}>
-      <ButtonComponent
-        href={href}
-        target={target}
+      <ButtonStyled
+        {...(isLink && {
+          as: 'a',
+          href,
+          target,
+          download: filename,
+        })}
         onClick={onClick}
-        download={filename}
         hasIcon={hasIcon}
       >
         {children}
-      </ButtonComponent>
+      </ButtonStyled>
 
       {hasIcon && <Icon icon={icon} />}
     </ButtonWrapper>
