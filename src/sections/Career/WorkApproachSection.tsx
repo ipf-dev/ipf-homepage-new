@@ -27,6 +27,13 @@ const ContainerStyled = styled(Container)`
   }
 `;
 
+const SubTitleStyled = styled(SubTitle)`
+  width: 33.2rem;
+  @media ${responsive.conditionForTablet} {
+    width: auto;
+  }
+`;
+
 const WorkApproachImage = styled.span`
   background-image: url(${img_work_approach});
   @media ${high_resolution} {
@@ -60,7 +67,7 @@ export default function WorkApproachSection() {
       data-sal-easing="ease"
     >
       <div>
-        <SubTitle>{t('HPG-43')}</SubTitle>
+        <SubTitleStyled>{t('HPG-43')}</SubTitleStyled>
         <Description>{t('HPG-44')}</Description>
         <Button href="https://iportfolio.oopy.io/career" target="_blank">
           {t('HPG-45')}
