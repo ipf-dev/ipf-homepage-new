@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 import { responsive, high_resolution } from '../../layouts/responsive';
@@ -50,6 +51,8 @@ const WorkApproachImage = styled.span`
 `;
 
 export default function WorkApproachSection() {
+  const { t } = useTranslation();
+
   return (
     <ContainerStyled
       data-sal="slide-up"
@@ -57,12 +60,10 @@ export default function WorkApproachSection() {
       data-sal-easing="ease"
     >
       <div>
-        <SubTitle>Introducing Our Unique Work Approach</SubTitle>
-        <Description>
-          {`With technology grounded in philosophy, we're on a mission to revolutionize English education.\nIn this journey, we share a mutual trust and continuously contemplate better directions together.`}
-        </Description>
+        <SubTitle>{t('HPG-43')}</SubTitle>
+        <Description>{t('HPG-44')}</Description>
         <Button href="https://iportfolio.oopy.io/career" target="_blank">
-          View more
+          {t('HPG-45')}
         </Button>
       </div>
 
