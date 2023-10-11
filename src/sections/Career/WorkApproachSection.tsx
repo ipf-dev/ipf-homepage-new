@@ -18,7 +18,7 @@ const ContainerStyled = styled(Container)`
   gap: 4rem;
 
   > div:first-child {
-    max-width: 32.2rem;
+    max-width: 34rem;
     width: auto;
 
     @media ${responsive.conditionForDesktop} {
