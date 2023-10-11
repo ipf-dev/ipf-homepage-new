@@ -8,7 +8,7 @@ import { responsive } from '../layouts/responsive';
 const FloatingButtonContainer = styled.div`
   position: fixed;
   right: 2rem;
-  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.16);
 
   @media ${responsive.conditionForTablet} {
     right: calc((100% - 70.4rem) / 2);
