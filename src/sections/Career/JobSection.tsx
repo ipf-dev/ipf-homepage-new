@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { Element } from 'react-scroll';
 import styled from 'styled-components';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
@@ -23,13 +25,15 @@ export default function JobSection() {
 
   return (
     <ContainerStyled>
-      <SubTitle
-        data-sal="slide-up"
-        data-sal-duration="1000"
-        data-sal-easing="ease"
-      >
-        {t('HPG-79')}
-      </SubTitle>
+      <Element name="recruiting-now">
+        <SubTitle
+          data-sal="slide-up"
+          data-sal-duration="1000"
+          data-sal-easing="ease"
+        >
+          {t('HPG-79')}
+        </SubTitle>
+      </Element>
       <JobsItemPreview />
     </ContainerStyled>
   );

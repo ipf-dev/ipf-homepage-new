@@ -55,9 +55,7 @@ const FloatingButton = () => {
 
   return (
     <FloatingButtonContainer style={{ bottom: `${bottom}rem` }}>
-      <Button href="https://iportfolio.oopy.io/career" target="_blank">
-        {t('TEXT-16')}
-      </Button>
+      <Button>{t('TEXT-16')}</Button>
     </FloatingButtonContainer>
   );
 };

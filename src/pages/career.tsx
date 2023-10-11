@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
+import { Link } from 'react-scroll';
 import Header from '../components/Header';
 import HelmetComponent from '../components/HelmetComponent';
 import IntroSection from '../sections/Career/IntroSection';
@@ -27,7 +28,9 @@ export default function Career() {
         <EmploymentStepSection />
         <JobSection />
         <Footer />
-        <FloatingButton />
+        <Link to="recruiting-now" offset={-100}>
+          <FloatingButton />
+        </Link>
       </div>
     </>
   );
