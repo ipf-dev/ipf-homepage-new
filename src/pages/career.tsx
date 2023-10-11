@@ -11,6 +11,7 @@ import GrowthSection from '../sections/Career/GrowthSection';
 import BenefitSection from '../sections/Career/BenefitSection';
 import EmploymentStepSection from '../sections/Career/EmploymentStepSection';
 import JobSection from '../sections/Career/JobSection';
+import WorkApproachSection from '../sections/Career/WorkApproachSection';
 import Footer from '../containers/Footer';
 import FloatingButton from '../components/FloatingButton';
 
@@ -23,6 +24,7 @@ export default function Career() {
         <Header>{t('TEXT-08')}</Header>
         <IntroSection />
         <CommunitySection />
+        <WorkApproachSection />
         <GrowthSection />
         <BenefitSection />
         <EmploymentStepSection />
