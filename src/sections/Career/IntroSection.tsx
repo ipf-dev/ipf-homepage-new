@@ -62,7 +62,7 @@ const ValueText = styled.div`
   width: 100%;
   padding: 4rem;
 
-  ${Typography('body', 1.6, 700)};
+  ${Typography('subheading', 1.8, 400)};
   color: white;
 
   word-break: keep-all;
