@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import styled from 'styled-components';
+import { type TFunction, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import Typography from '../../layouts/Typography';
 
@@ -17,16 +17,26 @@ import img_we_2_2x from '../../assets/images/Career/img_we_2@2x.png';
 import img_we_3 from '../../assets/images/Career/img_we_3.png';
 import img_we_3_2x from '../../assets/images/Career/img_we_3@2x.png';
 
+interface ImageProps {
+  src: { x1: string; x2: string };
+  title: (t: TFunction<'translation'>) => string;
+}
+
 const ContainerStyled = styled(Container)`
   flex-direction: column;
 `;
 
-const commonStyle = css`
+const Image = styled.span<Pick<ImageProps, 'src'>>`
   width: 100%;
   height: 26.7rem;
   border-radius: 1.6rem;
   background-size: cover;
   margin: 0 0 1.6rem 0;
+
+  background-image: ${({ src: { x1 } }) => `url(${x1})`};
+  @media ${high_resolution} {
+    background-image: ${({ src: { x2 } }) => `url(${x2})`};
+  }
 
   @media ${responsive.conditionForTablet} {
     width: 22.6rem;
@@ -36,33 +46,6 @@ const commonStyle = css`
 
   @media ${responsive.conditionForDesktop} {
     width: 33.6rem;
-  }
-`;
-
-const ImageItem1 = styled.span`
-  ${commonStyle};
-
-  background-image: url(${img_we_1});
-  @media ${high_resolution} {
-    background-image: url(${img_we_1_2x});
-  }
-`;
-
-const ImageItem2 = styled.span`
-  ${commonStyle};
-
-  background-image: url(${img_we_2});
-  @media ${high_resolution} {
-    background-image: url(${img_we_2_2x});
-  }
-`;
-
-const ImageItem3 = styled.span`
-  ${commonStyle};
-
-  background-image: url(${img_we_3});
-  @media ${high_resolution} {
-    background-image: url(${img_we_3_2x});
   }
 `;
 
@@ -91,6 +74,30 @@ const SubTitleStyled = styled(SubTitle)`
   }
 `;
 
+const images: Array<ImageProps> = [
+  {
+    src: {
+      x1: img_we_1,
+      x2: img_we_1_2x,
+    },
+    title: (t) => t('HPG-38'),
+  },
+  {
+    src: {
+      x1: img_we_2,
+      x2: img_we_2_2x,
+    },
+    title: (t) => t('HPG-39'),
+  },
+  {
+    src: {
+      x1: img_we_3,
+      x2: img_we_3_2x,
+    },
+    title: (t) => t('HPG-40'),
+  },
+];
+
 export default function IntroSection() {
   const { t } = useTranslation();
 
@@ -107,15 +114,11 @@ export default function IntroSection() {
         data-sal-duration="1000"
         data-sal-easing="ease"
       >
-        <ImageItem1>
-          <ValueText>{t('HPG-38')}</ValueText>
-        </ImageItem1>
-        <ImageItem2>
-          <ValueText>{t('HPG-39')}</ValueText>
-        </ImageItem2>
-        <ImageItem3>
-          <ValueText>{t('HPG-40')}</ValueText>
-        </ImageItem3>
+        {images.map(({ src, title }) => (
+          <Image src={src} key={title(t)}>
+            <ValueText>{title(t)}</ValueText>
+          </Image>
+        ))}
       </ImageList>
     </ContainerStyled>
   );
