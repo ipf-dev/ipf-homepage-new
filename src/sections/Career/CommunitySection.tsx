@@ -26,7 +26,7 @@ const GoodTeam = styled.div`
   }
 
   @media ${responsive.conditionForDesktop} {
-    height: 54.3rem;
+    height: 53rem;
   }
 `;
 
