@@ -7,7 +7,6 @@ import { responsive, high_resolution } from '../../layouts/responsive';
 import Container from '../../components/Container';
 import SubTitle from '../../components/SubTitle';
 import Description from '../../components/Description';
-import Column from '../../components/Column';
 import Interview from '../../components/Interview';
 
 import img_good_team from '../../assets/images/Career/img_good_team.png';
@@ -33,6 +32,15 @@ const GoodTeam = styled.div`
 const ContainerStyled = styled(Container)`
   margin: 0;
   height: 100%;
+`;
+
+const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media ${responsive.conditionForDesktop} {
+    margin-top: 8rem;
+  }
 `;
 
 const WhiteSubTitle = styled(SubTitle)`
