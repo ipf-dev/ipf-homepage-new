@@ -35,6 +35,7 @@ const Panel = styled.div`
 
   background-color: #ffeaea;
 
+  z-index: 1;
   position: fixed;
   bottom: 0;
   left: 0;
