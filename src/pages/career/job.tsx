@@ -5,6 +5,7 @@ import Skeleton from 'react-loading-skeleton';
 
 import Typography from '../../layouts/Typography';
 import colors from '../../layouts/colors';
+import { responsive } from '../../layouts/responsive';
 
 import { getAllJobs, getJobDetail } from '../../api/getJobsData';
 
@@ -114,6 +115,20 @@ const CircleList = styled.ul`
 
   margin-bottom: 0.8rem;
   white-space: pre-line;
+`;
+
+const FooterWrapper = styled.div`
+  .footer {
+    padding-bottom: 21.8rem;
+
+    @media ${responsive.conditionForTablet} {
+      padding-bottom: 25.8rem;
+    }
+
+    @media ${responsive.conditionForDesktop} {
+      padding-bottom: 12rem;
+    }
+  }
 `;
 
 function displayJobDetail(jobsDetailData: [JobDetailType]) {
@@ -242,7 +257,9 @@ export default function Job({ location }: Props) {
         </Layout>
       </ContainerStyled>
 
-      <Footer />
+      <FooterWrapper>
+        <Footer className="footer" />
+      </FooterWrapper>
     </>
   );
 }

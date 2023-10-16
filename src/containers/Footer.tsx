@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type CSSProperties } from 'react';
 import styled, { css } from 'styled-components';
 import { useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
 
@@ -111,32 +111,35 @@ const DownloadButton = styled(Button).attrs({ className: 'download-button' })`
   }
 `;
 
-export default function Footer() {
+interface FooterProps {
+  className?: string;
+  style?: CSSProperties;
+}
+
+export default function Footer({ ...styleProps }: FooterProps) {
   const { language } = useI18next();
   const { t } = useTranslation();
 
   return (
-    <>
-      <ContainerStyled id="footer">
-        <LicenseContainer>
-          <Logo />
-          <License>© iPortfolio Inc. All rights reserved.</License>
-        </LicenseContainer>
-        <LinkContainer>
-          <FacebookLink href="https://www.facebook.com/ipofo" target="_blank" />
-          <NaverPostLink href="https://post.naver.com/ipofo" target="_blank" />
-        </LinkContainer>
-        <DownloadButton
-          className="download-button"
-          icon="download"
-          href={language === 'en' ? iPortfolio_intro_en : iPortfolio_intro_ko}
-          filename={
-            language === 'en' ? `iPortfolio_intro_en` : `iPortfolio_intro_ko`
-          }
-        >
-          {t('HPG-88')}
-        </DownloadButton>
-      </ContainerStyled>
-    </>
+    <ContainerStyled id="footer" {...styleProps}>
+      <LicenseContainer>
+        <Logo />
+        <License>© iPortfolio Inc. All rights reserved.</License>
+      </LicenseContainer>
+      <LinkContainer>
+        <FacebookLink href="https://www.facebook.com/ipofo" target="_blank" />
+        <NaverPostLink href="https://post.naver.com/ipofo" target="_blank" />
+      </LinkContainer>
+      <DownloadButton
+        className="download-button"
+        icon="download"
+        href={language === 'en' ? iPortfolio_intro_en : iPortfolio_intro_ko}
+        filename={
+          language === 'en' ? `iPortfolio_intro_en` : `iPortfolio_intro_ko`
+        }
+      >
+        {t('HPG-88')}
+      </DownloadButton>
+    </ContainerStyled>
   );
 }
