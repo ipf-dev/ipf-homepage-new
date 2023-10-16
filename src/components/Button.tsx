@@ -64,7 +64,7 @@ const ButtonStyled = styled.button<{ hasIcon: boolean }>`
   border: none;
   border-radius: 8px;
 
-  text-align: left;
+  text-align: ${({ hasIcon }) => (hasIcon ? 'left' : 'center')};
   cursor: pointer;
 
   ${Typography('body', 1.4, 700)};
