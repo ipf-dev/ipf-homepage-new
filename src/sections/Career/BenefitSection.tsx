@@ -152,7 +152,10 @@ const BenefitItemButton = styled.button`
 
   display: flex;
   justify-content: center;
-  white-space: nowrap;
+  white-space: pre-line;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-align: left;
 
   ${Typography('body', 1.4, 700)};
 
@@ -200,7 +203,7 @@ export default function BenefitSection() {
       setCurrentModal({
         show: true,
         data: {
-          key: key,
+          key,
           title: (WelfareData as any)[key].title,
           description: (WelfareData as any)[key].description,
           img: (WelfareData as any)[key].img,
@@ -220,7 +223,7 @@ export default function BenefitSection() {
       setCurrentModal({
         show: true,
         data: {
-          key: key,
+          key,
           title: (WelfareData as any)[key].title,
           description: (WelfareData as any)[key].description,
           img: (WelfareData as any)[key].img,
