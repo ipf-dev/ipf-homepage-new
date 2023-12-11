@@ -249,7 +249,7 @@ export default function BenefitSection() {
       >
         {Object.keys(WelfareData).map(function (key, index) {
           if (key === '1' && language === 'en') {
-            return;
+            return null;
           }
           return (
             <BenefitItemButton
