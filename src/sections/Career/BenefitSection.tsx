@@ -256,7 +256,7 @@ export default function BenefitSection() {
               key={key}
               onClick={
                 language === 'ko'
-                  ? () => handleOnClick(parseInt(key))
+                  ? () => handleOnClick(parseInt(key, 10))
                   : () => {}
               }
               lang={language}
