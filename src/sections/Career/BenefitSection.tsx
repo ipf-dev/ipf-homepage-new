@@ -248,7 +248,7 @@ export default function BenefitSection() {
         data-sal-easing="ease"
       >
         {Object.keys(WelfareData).map(function (key, index) {
-          if (key == '1' && language === 'en') {
+          if (key === '1' && language === 'en') {
             return;
           }
           return (
