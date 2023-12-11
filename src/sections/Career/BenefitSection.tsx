@@ -140,7 +140,6 @@ const Wrapper = styled.div`
 const BenefitItemButton = styled.button`
   width: fit-content;
   max-width: 100%;
-  height: 6.9rem;
 
   border: none;
   border-radius: 1.6rem;
