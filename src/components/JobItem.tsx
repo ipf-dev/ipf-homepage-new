@@ -64,13 +64,15 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const TypeOfJob = styled.p`
-  flex: 0 0 12.4rem;
-
   ${Typography('body', 1.6, 400)};
   width: 12.4rem;
   text-align: left;
   display: flex;
   align-items: center;
+
+  @media ${responsive.conditionForTablet} {
+    flex: 0 0 12.4rem;
+  }
 `;
 
 export const LabelStyled = styled(Label)`
