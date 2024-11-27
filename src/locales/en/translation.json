@@ -61,7 +61,6 @@
   "HPG-68": "*Subject to change",
   "HPG-69": "Document Screening",
   "HPG-70": "Click the 'Apply' button located on the individual job listing page and submit the specified application documents for review.",
-  "HPG-107": "*For the SW developer position, online coding tests may be given after the application review.",
   "HPG-71": "First Interview",
   "HPG-72": "The first interview with the team leader aims to assess your practical skills.",
   "HPG-73": "*We may request the information of recommenders only from those who have passed the first interview.",
@@ -98,6 +97,8 @@
   "HPG-104": "Store learners' reading history and learning data to train generative AI for personalized conversations.",
   "HPG-105": "Fine-tune word difficulty, sentence length, speech rate, and more to create a tailored learning experience that matches the learner's age and English level.",
   "HPG-106": "Cample™ is a web-based live video class solution specially designed for language learning. It provides a variety of teaching tools and management features that increase learner engagement in class, creating an optimized online learning environment.",
+  "HPG-107": "*For the SW developer position, online coding tests may be given after the application review.",
+  "HPG-108": "There are no current postings in progress.",
 
   "INTVW-OKWON-TITLE": "iOS Developer, OCHEOL KWON",
   "INTVW-OKWON-QUOTE": "I tackle diverse challenges and constantly learn new technologies to create a better iOS App.\nIt's fulfilling to know that my work contributes to advancements in education.",
