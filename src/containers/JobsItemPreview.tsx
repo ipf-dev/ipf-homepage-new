@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from 'react';
-
+import styled from 'styled-components';
 import { getAllJobs } from '../api/getJobsData';
 
 import JobItem, { JobItemDataType } from '../components/JobItem';
 import JobItemSkeleton from '../components/JobItemSkeleton';
+import Typography from '../layouts/Typography';
+import { useTranslation } from 'react-i18next';
 
-const emptyJobsData = {
-  id: '',
-  part: '',
-  title: '',
-  details: '',
-  due_date: '',
-};
+const EmptyJobs = styled.div`
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  ${Typography('body', 1.6, 700)};
+`;
 
 export default function JobsItemPreview() {
-  const [jobsData, setJobsData] = useState<JobItemDataType[]>([emptyJobsData]);
+  const { t } = useTranslation();
+
+  const [jobsData, setJobsData] = useState<JobItemDataType[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -25,14 +29,16 @@ export default function JobsItemPreview() {
         if (resultData) {
           setJobsData(resultData);
         } else {
-          setJobsData([emptyJobsData]);
+          setJobsData([]);
         }
       })
-      .catch(() => setJobsData([emptyJobsData]));
+      .catch(() => setJobsData([]))
+      .finally(() => setIsLoading(false));
 
     return () => {
       abortController.abort();
-      setJobsData([emptyJobsData]);
+      setJobsData([]);
+      setIsLoading(false);
     };
   }, []);
 
@@ -43,8 +49,10 @@ export default function JobsItemPreview() {
       data-sal-duration="1000"
       data-sal-easing="ease"
     >
-      {jobsData[0].title == '' ? (
+      {isLoading ? (
         <JobItemSkeleton />
+      ) : jobsData.length === 0 ? (
+        <EmptyJobs>{t('HPG-108')}</EmptyJobs>
       ) : (
         jobsData.map((jobItemData: JobItemDataType, index) => {
           return <JobItem key={jobItemData.title} jobItemData={jobItemData} />;
