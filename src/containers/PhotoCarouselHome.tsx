@@ -4,25 +4,25 @@ import styled from 'styled-components';
 import { responsive, high_resolution } from '../layouts/responsive';
 import colors from '../layouts/colors';
 
-import img_home_career from '../assets/images/Home/img_home_career.png';
-import img_home_career_2x from '../assets/images/Home/img_home_career@2x.png';
+import img_home_career from '../assets/images/Home/img_home_career.jpg';
+import img_home_career_2x from '../assets/images/Home/img_home_career@2x.jpg';
 
 const Photo = styled.div`
   width: 33.6rem;
-  height: 23rem;
+  height: 22.9rem;
   border-radius: 0.8rem;
 
   grid-row: 1;
 
   background-repeat: no-repeat;
-  background-size: 101.3rem;
+  background-size: 100.8rem 114.5rem;
 
   background-image: url(${img_home_career});
   @media ${high_resolution} {
     background-image: url(${img_home_career_2x});
   }
   background-position: ${({ row, col }: { row: number; col: number }) =>
-    `${col * -33.8}rem ${row * -23}rem`};
+    `${col * -33.6}rem ${row * -22.9}rem`};
 `;
 
 const Carousel = styled.div`
